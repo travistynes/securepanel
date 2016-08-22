@@ -1,0 +1,143 @@
+<html>
+<head>
+    <title>Secure Panel</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    
+    <!-- Link in stylesheets -->
+    <link rel="stylesheet" type="text/css" href="css/main.css"/>
+</head>
+<body>
+
+<div id="viewport">
+<center>
+<div id="splashScreen" class="window">
+    <div class="content">
+        <div class="title">Level - Security Panel</div>
+        <div class="body">
+            <center>
+            <table cellspacing="0" cellpadding="5" border="1">
+                <tr><td>Nuclear Warhead</td><td style="color: #0a9e0a; font-weight: bold;">Secure</td></tr>
+                <tr><td>Target</td><td>Unknown [read-error]</td></tr>
+                <tr><td>Notes</td><td>Maintenance required</td></tr>
+            </table>
+            </center>
+        <br>
+        <div class="attempts">Unauthorized access attempts: -</div>
+        </div>
+        <br>
+        <div class="statusbar">Statusbar</div>
+        <br><br>
+        <div id="startButton" class="button">Open</div>
+    </div>
+</div>
+<div id="winScreen" class="window">
+    <div class="content">
+        <div class="title">Access Granted</div>
+        <div class="body">
+            <font color="#FF0000">Proceed with caution</font>
+            <br><br>
+            <b>For safety, exiting the system will permanently increase security.</b>
+            <br><br>
+            Warning: Launch operation will render security panel inoperable.
+            <br><br>
+            Nuclear warhead is ready. Enter command.
+        </div>
+        <br>
+        <div id="launchNukeButton" class="button">Launch</div> <div id="skipLaunchNukeButton" class="button">Exit</div>
+    </div>
+</div>
+<div id="launchNukeScreen" class="window">
+    <div class="content">
+        <div class="title">Nuclear Launch</div>
+        <div class="body">Launch confirmed. Target impact in 60 seconds. Estimated casualties: Millions</div>
+        <div id="nuclearImpactTimer"></div>
+        <br>
+        <div class="statusbar">Please wait.</div>
+        <br><br>
+        <div id="abortLaunchButton" class="button">Abort</div>
+    </div>
+</div>
+<div id="nuclearImpactScreen" class="window">
+    <div class="content">
+        <div class="title">Security Panel Inoperable</div>
+        <div class="body">
+            <center>
+            <table cellspacing="0" cellpadding="5" border="1">
+                <tr><td>Nuclear Warhead</td><td style="color: #FF0000; font-weight: bold;">Launched</td></tr>
+                <tr><td>Target</td><td>Destroyed</td></tr>
+                <tr><td>Notes</td><td>Security panel inoperable</td></tr>
+            </table>
+            </center>
+        </div>
+        <br>
+        <div class="statusbar">Statusbar</div>
+    </div>
+</div>
+<div id="skipLaunchNukeScreen" class="window">
+    <div class="content">
+        <div class="title">Security Panel Initialized</div>
+        <div class="body">
+            Security hardening complete.
+        </div>
+        <br>
+        <div id="skipLaunchOkayButton" class="button">Okay</div>
+    </div>
+</div>
+<div id="loseScreen" class="window">
+    <div class="content">
+        <div class="title">Access Denied</div>
+        <div class="body">Unauthorized access attempt recorded.</div>
+        <br>
+        <div id="loseOkayButton" class="button">Okay</div>
+    </div>
+</div>
+<div id="nextLevelScreen" class="window">
+    <div class="content">
+        <br><br><br>
+        <div class="title">Level - Security Panel</div>
+        <br><br><br>
+    </div>
+</div>
+<table id="gameWindow" cellpadding="0" cellspacing="0" border="0">
+    <tr>
+    <td style="width: 90%;">
+        <table style="width: 100%; height: 100%;" cellspacing="0" cellpadding="0" border="0">
+            <tr style="height: 80%;">
+                <td colspan="2">
+                    <table id="field" cellspacing="0" cellpadding="0" border="0"></table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div id="playerHealthBox">
+                        <div id="playerHealthbar"></div>
+                    </div>
+                </td>
+                <td>
+                    <div id="playerManaBox">
+                        <div id="playerManabar"></div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </td>
+    <td>
+        <table id="spellbar" style="width: 100%; height: 100%;" cellspacing="0" cellpadding="0" border="0">
+            <tr><td><div id="spellHeal" class="spellbutton"><div class="label">Heal</div></div></td></tr>
+            <tr><td><div id="spellHit" class="spellbutton"><div class="label">Hit</div></div></td></tr>
+            <tr><td><div id="spellSlam" class="spellbutton"><div class="label">Slam</div></div></td></tr>
+        </div>
+    </td>
+    </tr>
+</table>
+</div>
+</center>
+
+<!-- Load javascript after html loads. Ensures DOM is loaded. -->
+<script src="js/jquery-3.1.0.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+
+<script src="js/main.js"></script>
+
+</body>
+</html>

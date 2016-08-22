@@ -1,0 +1,305 @@
+body
+{
+    margin: 0px;
+    font-family: sans-serif;
+    background-color: #FFFFFF;
+}
+
+#viewport
+{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    border: 0px solid #000000;
+}
+
+.window
+{
+    width: 50%;
+    margin: 0px;
+    padding: 50px;
+    text-align: center;
+    font-family: monospace;
+    display: none;
+}
+
+.window .content
+{
+    margin: 0px;
+    padding: 20px;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    border: 1px solid #909090;
+}
+
+.window .title
+{
+    padding: 5px;
+    text-align: center;
+    font-family: monospace;
+    text-decoration: underline;
+    color: #000000;
+    border-radius: 0px;
+    border: 0px solid #656565;
+}
+
+.window .body
+{
+    padding: 10px;
+    font-size: medium;
+}
+
+.window .content .statusbar
+{
+    padding: 2px;
+    font-family: monospace;
+    background-color: #fffdbc;
+    border: 1px solid #adadad;
+    display: inline-block;
+}
+
+.window .content .attempts
+{
+    color: #FF0000;
+}
+
+#gameWindow
+{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+#gameWindow td
+{
+    vertical-align: top;
+    padding: 5px;
+}
+
+#field
+{
+    width: 100%;
+    height: 100%;
+    border: 0px solid #000000;
+}
+
+#field td
+{
+    position: relative;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #e8e8e8;
+}
+
+#spellbar
+{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    border-radius: 5px;
+    border: 1px solid #e8e8e8;
+}
+
+.enemy
+{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    background-color: #FFFFFF;
+    border-radius: 0px;
+    border: 1px solid #222222;
+}
+
+#field .enemy td
+{
+    padding: 0px;
+    border: 0px solid #000000;
+}
+
+.enemyTitle
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    font-family: monospace;
+    text-align: center;
+    font-size: medium;
+    color: #272727;
+    background-color: #feffe8;
+    border: 0px solid #FFFFFF;
+}
+
+.enemyHealthbar
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 0px;
+    border: 0px solid #868686;
+}
+
+.enemyCastbar
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: 0px;
+    background-color: #272727;
+    border-radius: 0px;
+    border: 0px solid #868686;
+}
+
+#playerManaBox
+{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    border: 1px solid #222222;
+}
+
+#playerManabar
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #1fc0ff;
+    border-radius: 5px;
+    border: 0px solid #868686;
+}
+
+#playerHealthBox
+{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    border: 1px solid #222222;
+}
+
+#playerHealthbar
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #90ff57;
+    border-radius: 5px;
+    border: 0px solid #868686;
+}
+
+.target
+{
+    background-color: #3e3e3e;
+}
+
+.bossColor
+{
+    background-color: #f9fdc0;
+}
+
+.tankColor
+{
+    background-color: #919da0;
+}
+
+.healerColor
+{
+    background-color: #e0ffb8;
+}
+
+.dead
+{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    color: #FFFFFF;
+    background-color: #f7f3da;
+    border-radius: 0px;
+    border: 1px solid #b1b1b1;
+}
+
+#nuclearImpactTimer
+{
+    width: 100%;
+    height: 5%;
+    background-color: #c53e3e;
+    border-radius: 3px;
+    border: 1px solid #222222;
+}
+
+.spellbutton {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    cursor: pointer;
+    text-align: center;
+    font-size: small;
+    font-weight: bold;
+    color: #000000;
+    background-color: #fffde1;
+    border-radius: 5px;
+    border: 1px solid #a5a5a5;
+    display: table;
+}
+
+.spellbutton .label
+{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.spellbutton_hover {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    cursor: pointer;
+    text-align: center;
+    font-size: small;
+    font-weight: bold;
+    color: #000000;
+    background-color: #fffab3;
+    border-radius: 5px;
+    border: 1px solid #232323;
+    display: table;
+}
+
+.button {
+    padding: 5px;
+    cursor: pointer;
+    font-family: monospace;
+    font-weight: normal;
+    color: #000000;
+    background-color: #ffe8cc;
+    border-radius: 3px;
+    border: 1px solid #a5a5a5;
+    display: inline-block;
+}
+
+.button_hover {
+    padding: 5px;
+    cursor: pointer;
+    font-family: monospace;
+    font-weight: normal;
+    color: #000000;
+    background-color: #ffd39d;
+    border-radius: 3px;
+    border: 1px solid #232323;
+    display: inline-block;
+}
